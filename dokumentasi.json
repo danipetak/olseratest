@@ -1,0 +1,257 @@
+{
+	"info": {
+		"_postman_id": "ba0ac8d5-7236-4774-a9cf-cca21f6ec362",
+		"name": "Olsera Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "View",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/pajak",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"pajak"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insert Item",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/pajak?add_data=item&nama=Baju Batik",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"pajak"
+					],
+					"query": [
+						{
+							"key": "add_data",
+							"value": "item"
+						},
+						{
+							"key": "nama",
+							"value": "Baju Batik"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insert Pajak",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/pajak?add_data=pajak&nama=PPh&rate=5&id_item=1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"pajak"
+					],
+					"query": [
+						{
+							"key": "add_data",
+							"value": "pajak"
+						},
+						{
+							"key": "nama",
+							"value": "PPh"
+						},
+						{
+							"key": "rate",
+							"value": "5"
+						},
+						{
+							"key": "id_item",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Item",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/pajak?hapus_data=item&id_item=2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"pajak"
+					],
+					"query": [
+						{
+							"key": "hapus_data",
+							"value": "item"
+						},
+						{
+							"key": "id_item",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Pajak",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/pajak?hapus_data=pajak&id_pajak=1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"pajak"
+					],
+					"query": [
+						{
+							"key": "hapus_data",
+							"value": "pajak"
+						},
+						{
+							"key": "id_pajak",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Pajak",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/pajak?update_data=pajak&id_pajak=1&nama=PPN&rate=10",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"pajak"
+					],
+					"query": [
+						{
+							"key": "update_data",
+							"value": "pajak"
+						},
+						{
+							"key": "id_pajak",
+							"value": "1"
+						},
+						{
+							"key": "nama",
+							"value": "PPN"
+						},
+						{
+							"key": "rate",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Item",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/pajak?update_data=item&id_item=1&nama=Baju Casual",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"pajak"
+					],
+					"query": [
+						{
+							"key": "update_data",
+							"value": "item"
+						},
+						{
+							"key": "id_item",
+							"value": "1"
+						},
+						{
+							"key": "nama",
+							"value": "Baju Casual"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

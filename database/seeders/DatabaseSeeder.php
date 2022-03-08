@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class DatabaseSeeder extends Seeder
 {
@@ -14,5 +15,9 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // \App\Models\User::factory(10)->create();
+
+        $basic_data = database_path('sql/bcp_test.sql');
+        DB::unprepared(file_get_contents($basic_data));
+        $this->command->info('Basic table seeded!');
     }
 }
